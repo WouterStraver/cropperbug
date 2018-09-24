@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Test.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Test">
+    <ContentPage.Content>
+        <StackLayout Padding="20,40,20,20" Orientation="Vertical">
+            <Image Source="testt" HeightRequest="50" WidthRequest="30" />
+            <Image Source="test.png" HeightRequest="50" WidthRequest="30" />
+            <Button Clicked="OnClickedRectangle" Text="Rectangle" />
+            <Button Clicked="OnClickedCircle" Text="Circle" />
+            <Image x:Name="imageView"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

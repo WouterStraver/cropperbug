@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5AE225C1-20C1-444A-ABD7-547965282F49}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Test.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Test.iOS</AssemblyName>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignProvision />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignProvision />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
+    <CodesignProvision>
+    </CodesignProvision>
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Icon-60%403x.png" />
+    <BundleResource Include="Resources\Icon-Small-40%403x.png" />
+    <BundleResource Include="Resources\Icon-Small%403x.png" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>4.0.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.583944" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Binding\TOCropViewController\TOCropViewController.csproj">
+      <Project>{c5dcb26a-02d0-4d8b-878e-c9169915c22a}</Project>
+      <Name>TOCropViewController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ImageCropper\ImageCropper.iOS\ImageCropper.iOS.csproj">
+      <Project>{2798eed2-0a88-45e7-97d5-f7dcb01233e1}</Project>
+      <Name>ImageCropper.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ImageCropper\ImageCropper\ImageCropper.csproj">
+      <Project>{93f1186d-ac71-47ac-a40e-b43ca82eb57b}</Project>
+      <Name>ImageCropper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Test\Test.csproj">
+      <Project>{7B7692F4-D2C1-4FE8-B4EB-33C2E25E7C44}</Project>
+      <Name>Test</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\.DS_Store" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-120 kopie.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-29-ipad.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-29-ipad%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-40 kopie.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-40%402x kopie.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iconbig kopie.png" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\ic_profiel_placeholder.pdf" />
+    <ImageAsset Include="Assets.xcassets\LayersLogo.png.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LayersLogo.png.imageset\splashscreen.png" />
+    <ImageAsset Include="Assets.xcassets\LayersLogo.png.imageset\splashscreen%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LayersLogo.png.imageset\splashscreen%403x.png" />
+    <ImageAsset Include="Assets.xcassets\add_contact.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\add_contact.imageset\add-recipient_ios.pdf" />
+    <ImageAsset Include="Assets.xcassets\button_back.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\button_back.imageset\button_back.png" />
+    <ImageAsset Include="Assets.xcassets\button_back.imageset\button_back%402x.png" />
+    <ImageAsset Include="Assets.xcassets\button_back.imageset\button_back%403x.png" />
+    <ImageAsset Include="Assets.xcassets\button_close.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\button_close.imageset\button_close.png" />
+    <ImageAsset Include="Assets.xcassets\button_close.imageset\button_close%402x.png" />
+    <ImageAsset Include="Assets.xcassets\button_close.imageset\button_close%403x.png" />
+    <ImageAsset Include="Assets.xcassets\button_distance.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\button_distance.imageset\button_distance.png" />
+    <ImageAsset Include="Assets.xcassets\button_distance.imageset\button_distance%402x.png" />
+    <ImageAsset Include="Assets.xcassets\button_distance.imageset\button_distance%403x.png" />
+    <ImageAsset Include="Assets.xcassets\close_fab.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\close_fab.imageset\close_fab_ios.pdf" />
+    <ImageAsset Include="Assets.xcassets\compass.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\compass.imageset\compass.pdf" />
+    <ImageAsset Include="Assets.xcassets\face.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\face.imageset\face.pdf" />
+    <ImageAsset Include="Assets.xcassets\filter.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\filter.imageset\filter.png" />
+    <ImageAsset Include="Assets.xcassets\filter.imageset\filter%402x.png" />
+    <ImageAsset Include="Assets.xcassets\filter.imageset\filter%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_algemeen.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_algemeen.imageset\algemeen iOS.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_chevron.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_chevron.imageset\ic_chevron_ios.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_clear.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_clear.imageset\ic_clear iOS-2.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_close.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_close.imageset\ic_close.png" />
+    <ImageAsset Include="Assets.xcassets\ic_close.imageset\ic_close%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_close.imageset\ic_close%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_credits.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_credits.imageset\credits iOS.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_cross.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_cross.imageset\ic_cross.png" />
+    <ImageAsset Include="Assets.xcassets\ic_cross.imageset\ic_cross%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_cross.imageset\ic_cross%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_cross_photo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_cross_photo.imageset\ic_cross_ios.png" />
+    <ImageAsset Include="Assets.xcassets\ic_cross_photo.imageset\ic_cross_ios%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_cross_photo.imageset\ic_cross_ios%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_empty.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_empty.imageset\ic_empty.png" />
+    <ImageAsset Include="Assets.xcassets\ic_empty.imageset\ic_empty%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_empty.imageset\ic_empty%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_explore.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_explore.imageset\ic_explore.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_historisch.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_historisch.imageset\historic iOS.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_map.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_map.imageset\ic_map.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_messagecreate.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_messagecreate.imageset\custom_fab_ios.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_more.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_more.imageset\ic_more.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_more.imageset\ic_more.png" />
+    <ImageAsset Include="Assets.xcassets\ic_more.imageset\ic_more%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_more.imageset\ic_more%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_mylayers.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_mylayers.imageset\ic_mylayers.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_natuur.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_natuur.imageset\natuur_iOS.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_photo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_photo.imageset\ic_photo.png" />
+    <ImageAsset Include="Assets.xcassets\ic_photo.imageset\ic_photo%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_photo.imageset\ic_photo%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_plus.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_plus.imageset\ic_plus_ios.png" />
+    <ImageAsset Include="Assets.xcassets\ic_plus.imageset\ic_plus_ios%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_plus.imageset\ic_plus_ios%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_profile.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_profile.imageset\ic_profile.pdf" />
+    <ImageAsset Include="Assets.xcassets\ic_zoek.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_zoek.imageset\ic_zoek iOS.pdf" />
+    <ImageAsset Include="Assets.xcassets\locationSelected.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\locationSelected.imageset\locationSelected.pdf" />
+    <ImageAsset Include="Assets.xcassets\locationUnselected.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\locationUnselected.imageset\locationUnselected.pdf" />
+    <ImageAsset Include="Assets.xcassets\lock.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\lock.imageset\lock.png" />
+    <ImageAsset Include="Assets.xcassets\lock.imageset\lock%402x.png" />
+    <ImageAsset Include="Assets.xcassets\lock.imageset\lock%403x.png" />
+    <ImageAsset Include="Assets.xcassets\login.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\login.imageset\login.png" />
+    <ImageAsset Include="Assets.xcassets\login.imageset\login%402x.png" />
+    <ImageAsset Include="Assets.xcassets\login.imageset\login%403x.png" />
+    <ImageAsset Include="Assets.xcassets\logo_fab.png.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\logo_fab.png.imageset\logo_fab.png" />
+    <ImageAsset Include="Assets.xcassets\logo_fab.png.imageset\logo_fab%402x.png" />
+    <ImageAsset Include="Assets.xcassets\logo_fab.png.imageset\logo_fab%403x.png" />
+    <ImageAsset Include="Assets.xcassets\mask_layer.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\mask_layer.imageset\mask_layer.png" />
+    <ImageAsset Include="Assets.xcassets\mask_layer.imageset\mask_layer%402x.png" />
+    <ImageAsset Include="Assets.xcassets\mask_layer.imageset\mask_layer%403x.png" />
+    <ImageAsset Include="Assets.xcassets\pauze.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pauze.imageset\Pauze.png" />
+    <ImageAsset Include="Assets.xcassets\pauze.imageset\Pauze%402x.png" />
+    <ImageAsset Include="Assets.xcassets\pauze.imageset\Pauze%403x.png" />
+    <ImageAsset Include="Assets.xcassets\photo_camera.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\photo_camera.imageset\text_ios-2.pdf" />
+    <ImageAsset Include="Assets.xcassets\play.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\play.imageset\play.png" />
+    <ImageAsset Include="Assets.xcassets\play.imageset\play%402x.png" />
+    <ImageAsset Include="Assets.xcassets\play.imageset\play%403x.png" />
+    <ImageAsset Include="Assets.xcassets\play_button.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\play_button.imageset\Play.png" />
+    <ImageAsset Include="Assets.xcassets\play_button.imageset\Play%402x.png" />
+    <ImageAsset Include="Assets.xcassets\play_button.imageset\Play%403x.png" />
+    <ImageAsset Include="Assets.xcassets\poi_custom.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\poi_custom.imageset\poi_custom_new_ios.pdf" />
+    <ImageAsset Include="Assets.xcassets\profile_edit.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\profile_edit.imageset\profile_photo.pdf" />
+    <ImageAsset Include="Assets.xcassets\stop.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\stop.imageset\stop.png" />
+    <ImageAsset Include="Assets.xcassets\stop.imageset\stop%402x.png" />
+    <ImageAsset Include="Assets.xcassets\stop.imageset\stop%403x.png" />
+    <ImageAsset Include="Assets.xcassets\text.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\text.imageset\text_ios.pdf" />
+    <ImageAsset Include="Assets.xcassets\when.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\when.imageset\when_ios.pdf" />
+    <ImageAsset Include="Assets.xcassets\where.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\where.imageset\where_ios.pdf" />
+    <ImageAsset Include="Assets.xcassets\testt.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\testt.imageset\avatar-1577909_960_720.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\testt.imageset\" />
+  </ItemGroup>
+</Project>
